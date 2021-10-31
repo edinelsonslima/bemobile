@@ -33,10 +33,14 @@
 - Instale o [Yarn](https://yarnpkg.com/)
 
 #### Executando a aplicação
-1. Faça um git clone do repositório: ``` git clone https://github.com/edinelsonslima/bemobile.git```
+1. Faça um git clone do repositório: 
+- - ``` git clone https://github.com/edinelsonslima/bemobile.git```
 
-2. Abra um terminal dentro da pasta do projeto e execute: ``` yarn ```
+2. Abra um terminal dentro da pasta do projeto e execute: 
+- - ``` yarn ```
 
-3. Execute a aplicação: ``` yarn dev```
+3. Execute a aplicação: 
+- - ``` yarn dev```
 
-4. No seu navegador acesse a url: ``` http://localhost:3001```
+4. No seu navegador acesse a url: 
+- - ``` http://localhost:3001```
