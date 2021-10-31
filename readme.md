@@ -34,13 +34,13 @@
 
 #### Executando a aplicação
 1. Faça um git clone do repositório: 
-- - ``` git clone https://github.com/edinelsonslima/bemobile.git```
+``` git clone https://github.com/edinelsonslima/bemobile.git```
 
 2. Abra um terminal dentro da pasta do projeto e execute: 
-- - ``` yarn ```
+``` yarn ```
 
 3. Execute a aplicação: 
-- - ``` yarn dev```
+``` yarn dev```
 
 4. No seu navegador acesse a url: 
-- - ``` http://localhost:3001```
+``` http://localhost:3001```
