@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { DataJson } from '../Table';
+import { DataJson } from '../../hooks/useTable';
 import './index.css';
 
 const TableLine = (props: DataJson) => {
@@ -8,7 +8,7 @@ const TableLine = (props: DataJson) => {
     const [date, setDate] = useState(''),
         [telefone, setTelefone] = useState('');
 
-    const formPhone = () => {
+    const formatPhone = () => {
         const phoneFormatted = phone.replace(
             /(\d{2})(\d{2})(\d{5})/,
             (regex, arg1, arg2, arg3) => `+${arg1} (${arg2}) ${arg3}-`
@@ -21,7 +21,7 @@ const TableLine = (props: DataJson) => {
 
         setDate(date);
 
-        formPhone();
+        formatPhone();
     }, [date, telefone]);
 
     return (

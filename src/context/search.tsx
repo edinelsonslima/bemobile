@@ -7,12 +7,10 @@ import {
 } from 'react';
 
 type SearchContextType = {
-    keyUp: boolean;
     search: string;
-    keyEnter: boolean;
-    setKeyUp: Dispatch<SetStateAction<boolean>>;
+    findUser: boolean;
     setSearch: Dispatch<SetStateAction<string>>;
-    setKeyEnter: Dispatch<SetStateAction<boolean>>;
+    setFindUser: Dispatch<SetStateAction<boolean>>;
 };
 
 type SearchProviderProps = {
@@ -23,18 +21,15 @@ const SearchContext = createContext({} as SearchContextType);
 
 const SearchProvider = ({ children }: SearchProviderProps) => {
     const [search, setSearch] = useState(''),
-        [keyEnter, setKeyEnter] = useState(false),
-        [keyUp, setKeyUp] = useState(false);
+        [findUser, setFindUser] = useState(false);
 
     return (
         <SearchContext.Provider
             value={{
                 search,
                 setSearch,
-                keyEnter,
-                keyUp,
-                setKeyEnter,
-                setKeyUp,
+                findUser,
+                setFindUser,
             }}
         >
             {children}

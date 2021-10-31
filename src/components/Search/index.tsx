@@ -4,8 +4,7 @@ import { SearchContext } from '../../context/search';
 import './index.css';
 
 const Search = () => {
-    const { setSearch, search, setKeyEnter, setKeyUp } =
-        useContext(SearchContext);
+    const { setSearch, search, setFindUser } = useContext(SearchContext);
 
     const styleLupa = {
         position: 'absolute',
@@ -13,9 +12,7 @@ const Search = () => {
         right: '15px',
     };
 
-    const handleKey = (e: { key: string }) => {
-        if (e.key === 'Enter') setKeyEnter(true);
-    };
+    if (search.length > 0) setFindUser(true);
 
     return (
         <div className='search-container'>
@@ -27,7 +24,6 @@ const Search = () => {
                 onChange={(e) => {
                     setSearch(e.target.value);
                 }}
-                onKeyDown={handleKey}
             />
             <Lupa style={styleLupa} />
         </div>
