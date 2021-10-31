@@ -1,6 +1,8 @@
-<img src='./logo.svg'>
+<img align="right" src='./logo.svg'>
+  
+#
+<br>
 <div align="center">
-<hr>
 <img src='./bemobile.png'>
 
 <hr>
