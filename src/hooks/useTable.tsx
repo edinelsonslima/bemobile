@@ -26,6 +26,7 @@ const useTable = () => {
 
     useMemo(() => {
         if (search.length >= 2) {
+            console.log('a');
             const expressao = new RegExp(search, 'i');
             const arrAux: DataJson[] = [];
             usersAux.map((user) => {
@@ -39,6 +40,7 @@ const useTable = () => {
             setUsers(usersAux);
             setFindUser(false);
         }
+
     }, [findUser]);
 
     return { users };

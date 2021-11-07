@@ -17,9 +17,8 @@ const TableLine = (props: DataJson) => {
     };
 
     useMemo(() => {
-        const [date] = admission_date.replaceAll('-', '/').split('T');
-
-        setDate(date);
+        const [date] = admission_date.split('T');
+        setDate(date.split('-').reverse().join('/'));
 
         formatPhone();
     }, [date, telefone]);
